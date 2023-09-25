@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import styles from './Home.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+
 import Speedometer from '../../components/Speedometer/Speedometer';
 import BarChart from '../../components/BarChart/BarChart';
 import { doGet } from '../../service/http';
@@ -34,13 +34,13 @@ const Home = () => {
   }, [logged, navigate, dispatch]);
 
   return (
-    <div className={styles.container}>
+    <>
       {weatherData &&
         <>
           <BarChart temperature={weatherData.main.temp} />
           <Speedometer humidity={weatherData.main.humidity} />
         </>}
-    </div>
+    </>
   )
 }
 
