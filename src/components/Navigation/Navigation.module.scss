@@ -1,0 +1,35 @@
+@import '../../styles/mixins.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  gap: 2rem;
+  font-size: 2rem;
+  padding: 1.5rem;
+
+  .navRight {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    gap: 2rem;
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+
+  .link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @include respond-to('xsmall') {
+
+    display: flex;
+    justify-content: center;
+
+    .navRight {
+      display: none;
+    }
+  }
+}

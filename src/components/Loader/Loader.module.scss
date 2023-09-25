@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 7rem);
+  position: sticky;
+  z-index: 1000;
+  // left: 50%;
+  // top: 50%;
+  background-color: rgb(176, 176, 176, 0.5);
+  width: 100%;
+}
